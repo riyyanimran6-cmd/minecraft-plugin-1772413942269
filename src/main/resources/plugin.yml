@@ -1,0 +1,25 @@
+name: SoulBoundSMP
+version: 1.0.0
+main: com.stormai.soulbound.SoulBoundSMP
+api-version: 1.21
+author: StormAI
+description: Collect souls from kills and use them for special abilities!
+permissions:
+  soulbound.use:
+    description: Allows using /souls command
+    default: true
+  soulbound.revive:
+    description: Allows reviving from weakened state yourself
+    default: true
+  soulbound.revive.other:
+    description: Allows reviving other players from weakened state
+    default: op
+commands:
+  souls:
+    description: Open souls management GUI
+    usage: /souls
+    permission: soulbound.use
+  soulbound:
+    description: SoulBoundSMP main command (alias for /souls)
+    usage: /soulbound [revive <player>]
+    permission: soulbound.use

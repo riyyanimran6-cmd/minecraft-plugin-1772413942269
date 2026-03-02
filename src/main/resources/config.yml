@@ -1,0 +1,58 @@
+messages:
+  no-permission: "&cYou don't have permission!"
+  kill-soul: "&aYou gained a soul! Total: &e{count}"
+  kill-cooldown: "&cYou are on cooldown for gaining souls!"
+  weakened-enter: "&cYou have run out of souls! You are now weakened."
+  weakened-exit: "&aYou are no longer weakened!"
+  soul-pickup: "&aYou picked up &e{count} &aSoul(s)! Total: &e{total}"
+  ability-activated: "&aYou activated {ability} for {duration} seconds!"
+  ability-no-souls: "&cYou need {cost} souls to activate {ability}!"
+  ability-on-cooldown: "&c{ability} is on cooldown for {time} seconds!"
+  revive-self: "&aYou have revived yourself from the weakened state!"
+  revive-not-weakened: "&cYou are not in a weakened state!"
+  revive-no-soul: "&cYou need at least 1 soul to revive!"
+  revive-no-target: "&cPlayer not found or not weakened!"
+  revive-target: "&aYou have been revived from the weakened state!"
+  revive-target-not-weakened: "&cThat player is not weakened!"
+
+cooldowns:
+  kill: 60
+  strength: 30
+  speed: 30
+
+weakened-health: 4.0
+normal-health: 20.0
+
+gui:
+  title: "&6Souls: {souls}"
+  ability-name: "&e{ability}"
+  cost: "&7Cost: &e{cost} Soul(s)"
+  duration: "&7Duration: &b{duration}s"
+  effect: "&7Effect: &a{effect} {amp}"
+  click: "&eClick to activate!"
+  cannot-afford: "&cNot enough souls!"
+  cooldown: "&cCooldown: &e{time}s"
+  close: "&cClose"
+
+abilities:
+  strength:
+    name: "Strength"
+    cost: 1
+    duration: 30
+    potion-effect: "strength"
+    potion-duration: 30
+    potion-amplifier: 0
+  speed:
+    name: "Speed"
+    cost: 1
+    duration: 30
+    potion-effect: "speed"
+    potion-duration: 30
+    potion-amplifier: 0
+
+soul-item:
+  material: "ENDER_PEARL"
+  name: "&bSoul"
+  lore:
+    - "&7Drop of a player's essence."
+    - "&7Right-click to consume (not implemented)"
